@@ -1,7 +1,7 @@
 services:
   sglang:
     image: lmsysorg/sglang:${SGLANG_IMAGE_TAG:-latest}
-    container_name: sglang
+    container_name: container-sglang
     restart: unless-stopped
     ports:
       - "${HOST_PORT:-30000}:30000"
